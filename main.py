@@ -22,11 +22,12 @@ def play_game():
     #             \n- Type restart() to restart game\
     #             \n- Type skip() to skip a question')
 
-    table = Table(
-        title="======================== [bold][cyan]PYTHONIC[/][/] ========================")
+    table = Table(title='[bold][cyan]PYTHONIC[/][/]', width=100)
+
     table.add_column(
         'Pythonic interactive [bold][green]CLI[/][/] application for Python learners'
     )
+
     table.add_row('Use double "[bold][cyan]qoutes[/][/]" unless otherwise')
     table.add_row('When coding indent [bold][cyan]3[/][/] spaces')
     table.add_row('Type [bold][magenta]exit[/][/]() to exit game')
@@ -45,7 +46,7 @@ def play_game():
         console.print(f'\nTotal score: [u]{score}[/u]\n', style='Bold cyan')
         console.print(f'{question}\n')
         # Toggle audio
-        subprocess.run(['say', question[2:]])  # read question
+        # subprocess.run(['say', question[2:]])  # read question
 
         while True:
             user_input = input('')
