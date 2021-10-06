@@ -1,6 +1,7 @@
 from quiz.questions import questions
 from quiz.prompts import spacing_error, correct, good_bye
 from rich.console import Console
+from rich.table import Table
 import subprocess
 import os
 
@@ -9,15 +10,29 @@ console = Console()
 
 def play_game():
     # Title:
-    console.print(
-        '\n\n[u][i]============== PYTHONIC ==============[/i][/u]\n', style='bold cyan')
+    os.system('cls||clear')
 
-    console.print('- Use double "qoutes" unless otherwise\
-                \n- When coding indent 3 spaces\
-                \n- Type exit() to exit game\
-                \n- Type restart() to restart game\
-                \n- Type skip() to skip a question')
+    # console.print(
+    #     '\n\n[u][i]============== PYTHONIC ==============[/i][/u]\n', style='bold cyan'
+    # )
 
+    # console.print('- Use double "qoutes" unless otherwise\
+    #             \n- When coding indent 3 spaces\
+    #             \n- Type exit() to exit game\
+    #             \n- Type restart() to restart game\
+    #             \n- Type skip() to skip a question')
+
+    table = Table(
+        title="======================== [bold][cyan]PYTHONIC[/][/] ========================")
+    table.add_column(
+        'Pythonic interactive [bold][green]CLI[/][/] application for Python learners'
+    )
+    table.add_row('Use double "[bold][cyan]qoutes[/][/]" unless otherwise')
+    table.add_row('When coding indent [bold][cyan]3[/][/] spaces')
+    table.add_row('Type [bold][magenta]exit[/][/]() to exit game')
+    table.add_row('Type [bold][magenta]restart[/][/]() to restart game')
+    table.add_row('Type [bold][magenta]skip[/][/]() to skip a question')
+    console.print(table, justify='center')
     subprocess.run(['say', 'Welcome to Pythonic!'])
 
     # Global variables
@@ -40,7 +55,7 @@ def play_game():
             if user_input == 'restart()':
 
                 restart_game = input(
-                    'Are you sure you want to restart the game y/n: '
+                    'Are you sure you want to restart the game [y/n]: '
                 )
 
                 if restart_game == 'y':
@@ -111,7 +126,7 @@ play_game()
 
 
 # Replay game
-user_input = input('Do you want to play again y/n: ')
+user_input = input('Do you want to play again [y/n]: ')
 
 if user_input == 'y':
     os.system('cls||clear')

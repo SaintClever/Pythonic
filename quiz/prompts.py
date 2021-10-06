@@ -1,5 +1,6 @@
 from quiz.questions import questions
 from rich.console import Console
+from rich.syntax import Syntax
 import subprocess
 import time
 import os
@@ -18,7 +19,15 @@ def spacing(question):
 # Invokes the spacing method and prints out the correct answer
 def spacing_error(question):
     spacing(question)
-    console.print(f'{questions[question]}')
+    # console.print(f'{questions[question]}')
+
+    syntax = Syntax(
+        questions[question],
+        'python',
+        theme='monokai')
+
+    console.print(syntax)
+
     console.print('\n:pile_of_poo: Incorrect\n', style="bold red")
     subprocess.run(['say', 'Incorrect'])
     time.sleep(2)
