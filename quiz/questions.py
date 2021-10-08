@@ -1,3 +1,4 @@
+""" Quiz questions and answers """
 import random
 
 # Return / enter not included: 3 spaces

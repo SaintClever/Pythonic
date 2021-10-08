@@ -1,10 +1,12 @@
+""" Pythonic Functions """
+import os
+import subprocess
+import time
 from quiz.questions import questions
 from rich.console import Console
 from rich.syntax import Syntax
 from rich.table import Table
-import subprocess
-import time
-import os
+
 
 console = Console()
 

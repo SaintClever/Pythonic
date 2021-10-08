@@ -1,9 +1,10 @@
+""" Main file for Pythonic """
+import os
+import subprocess
 from quiz.questions import questions
 from quiz.prompts import spacing_error, correct, good_bye
 from rich.console import Console
 from rich.table import Table
-import subprocess
-import os
 
 console = Console()
 
