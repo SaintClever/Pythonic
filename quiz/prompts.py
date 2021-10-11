@@ -1,32 +1,32 @@
 """ Pythonic Functions """
 import os
 import subprocess
+import sys
 import time
-from quiz.questions import questions
 from rich.console import Console
 from rich.syntax import Syntax
 from rich.table import Table
-
+from quiz.questions import questions
 
 console = Console()
 
 
-# Write incorrect answers to a txt file
 def write_file(table):
-    with open('pythonic.txt', 'a') as file:
+    ''' Write incorrect answers to a txt file '''
+    with open('pythonic.txt', 'a', encoding='utf-8') as file:
         file.write(table)
 
 
-# Replace blank spaces and edit else and elif
 def spacing(question):
+    ''' Replace blank spaces and edit else and elif '''
     questions[question] = questions[question]\
         .replace('   ', '\n   ')\
         .replace(')else', ')\nelse')\
         .replace(')elif', ')\nelif')
 
 
-# Invokes the spacing method and prints out the correct answer
 def spacing_error(question):
+    ''' Invokes the spacing method and prints out the correct answer '''
     spacing(question)  # adjust the spacing
     # console.print(f'{questions[question]}')
     write_file(f'{question}\n{questions[question]}\n\n\n')  # invoke write_file
@@ -46,22 +46,22 @@ def spacing_error(question):
     console.print(table)
 
     # Speak, wait and clear error
-    subprocess.run(['say', 'Incorrect'])
+    subprocess.run(['say', 'Incorrect'], check=True)
     time.sleep(2)
     os.system('cls||clear')
 
 
-# Prompts user is correct
 def correct():
+    ''' Prompts user is correct '''
     console.print('\n:thumbs_up: Correct\n', style="bold green")
-    subprocess.run(['say', 'Correct!'])
+    subprocess.run(['say', 'Correct!'], check=True)
     time.sleep(2)
     os.system('cls||clear')
 
 
-# Prompt Goodbye! and exit game
 def good_bye():
+    ''' Prompt Goodbye! and exit game '''
     os.system('cls||clear')
     console.print('Goodbye!\n', style='Bold cyan')
-    subprocess.run(['say', 'Goodbye!'])
-    exit()
+    subprocess.run(['say', 'Goodbye!'], check=True)
+    sys.exit()

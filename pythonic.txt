@@ -1,0 +1,6 @@
+9. create a function named ice_cream with two parameters, flavor="vanilla" and topping=None.        
+   Return your flavor and topping in a undeclared tuple: 
+def ice_cream(flavor="vanilla", topping=None):
+   return (flavor, topping)
+
+
