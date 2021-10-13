@@ -16,10 +16,10 @@ Answer random interactive python questions via the terminal and get prompted if 
 
 
 ### **<span style="color:orange">PROMPTS</span>: help keep you on your toes...**
-![Pythonic Prompts](assets/pythonic_00.gif "Pythonic Prompts")
+![Pythonic Prompts](assets/images/pythonic_00.gif "Pythonic Prompts")
 
 ### **<span style="color:cyan">CODING</span>: interactive coding challenges...**
-![Pythonic Coding](assets/pythonic_01.gif "Pythonic Coding")
+![Pythonic Coding](assets/images/pythonic_01.gif "Pythonic Coding")
 
 ### **<span style="color:magenta">STUDY</span>: future studies for interviews... maybe not**
-![Pythonic Studies](assets/pythonic_02.gif "Pythonic Studies")
+![Pythonic Studies](assets/images/pythonic_02.gif "Pythonic Studies")
