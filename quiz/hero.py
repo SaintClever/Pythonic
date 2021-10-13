@@ -17,7 +17,8 @@ def heading():
     #             \n- Type restart() to restart game\
     #             \n- Type skip() to skip a question')
 
-    table = Table(title='[bold][cyan]PYTHONIC[/][/]', width=100)
+    table = Table(
+        title=':snake: [bold][cyan]PYTHONIC[/][/] :snake:', width=100)
 
     table.add_column(
         'Pythonic interactive [bold][green]CLI[/][/] application for Python learners'
