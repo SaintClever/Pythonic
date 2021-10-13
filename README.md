@@ -1,4 +1,4 @@
-# ***🐍 <span style="color:lime">Pytonic</span>***
+# ***🐍 <span style="color:lime">Pythonic</span>***
 
 ## **An interactive <span style="color:lime">CLI</span> application for python learners**
 
@@ -8,18 +8,18 @@ Answer random interactive python questions via the terminal and get prompted if 
 
     ====================== Instructions ======================
    
-    - console.print('- Use double "qoutes" unless otherwise
-    - When coding indent 3 spaces
-    - Type exit() to exit game
-    - Type restart() to restart game
-    - Type skip() to skip a question
+    ▫ console.print('- Use double "qoutes" unless otherwise
+    ▫ When coding indent 3 spaces
+    ▫ Type exit() to exit game
+    ▫ Type restart() to restart game
+    ▫ Type skip() to skip a question
 
 
 ### **<span style="color:orange">PROMPTS</span>: help keep you on your toes...**
-![Pythonic GIF](assets/pythonic_00.gif "Pythonic")
+![Pythonic Prompts](assets/pythonic_00.gif "Pythonic Prompts")
 
 ### **<span style="color:cyan">CODING</span>: interactive coding challenges...**
-![Pythonic GIF](assets/pythonic_01.gif "Pythonic")
+![Pythonic Coding](assets/pythonic_01.gif "Pythonic Coding")
 
 ### **<span style="color:magenta">STUDY</span>: future studies for interviews... maybe not**
-![Pythonic GIF](assets/pythonic_02.gif "Pythonic")
+![Pythonic Studies](assets/pythonic_02.gif "Pythonic Studies")
