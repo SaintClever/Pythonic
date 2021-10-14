@@ -8,7 +8,7 @@ Answer random interactive python questions via the terminal and get prompted if 
 
     ====================== Instructions ======================
    
-    ▫ console.print('- Use double "qoutes" unless otherwise
+    ▫ Use double "qoutes" unless otherwise
     ▫ When coding indent 3 spaces
     ▫ Type exit() to exit game
     ▫ Type restart() to restart game
