@@ -6,14 +6,15 @@ Answer random interactive python questions via the terminal and get prompted if 
 
 ### **Run: python3 main.py to start the application**
 
-    ====================== Instructions ======================
-   
-    ▫ Use double "qoutes" unless otherwise
-    ▫ When coding indent 3 spaces
-    ▫ Type exit() to exit game
-    ▫ Type restart() to restart game
-    ▫ Type skip() to skip a question
+```
+====================== Instructions ======================
 
+▫ Use double "quotes" unless otherwise
+▫ When coding indent 3 spaces
+▫ Type exit() to exit game
+▫ Type restart() to restart game
+▫ Type skip() to skip a question
+```
 
 ### **<span style="color:orange">PROMPTS</span>: help keep you on your toes...**
 ![Pythonic Prompts](assets/images/pythonic_00.gif "Pythonic Prompts")

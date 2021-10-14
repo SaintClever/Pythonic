@@ -11,7 +11,7 @@ def heading():
     #     '\n\n[u][i]============== PYTHONIC ==============[/i][/u]\n', style='bold cyan'
     # )
 
-    # console.print('- Use double "qoutes" unless otherwise\
+    # console.print('- Use double "quotes" unless otherwise\
     #             \n- When coding indent 3 spaces\
     #             \n- Type exit() to exit game\
     #             \n- Type restart() to restart game\
@@ -24,7 +24,7 @@ def heading():
         'Pythonic interactive [bold][green]CLI[/][/] application for Python learners'
     )
 
-    table.add_row('Use double "[bold][cyan]qoutes[/][/]" unless otherwise')
+    table.add_row('Use double "[bold][cyan]quotes[/][/]" unless otherwise')
     table.add_row('When coding indent [bold][cyan]3[/][/] spaces')
     table.add_row('Type [bold][magenta]exit[/][/]() to exit game')
     table.add_row('Type [bold][magenta]restart[/][/]() to restart game')
