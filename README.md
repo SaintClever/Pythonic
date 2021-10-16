@@ -2,7 +2,7 @@
 
 ## **An interactive <span style="color:lime">CLI</span> application for python learners**
 
-Answer random interactive python questions via the terminal and get prompted if 👍 correct or 💩 incorrect. One point gets added users total score if correct. An, incorrect answer creates a prompt displaying the correct answer. In addition, correct answers are written to a txt file for later review.
+Answer random interactive python questions via the terminal and get prompted if 👍 correct or 💩 incorrect. One point gets added to users total score if correct. A incorrect answer creates a prompt displaying the correct answer. In addition, correct answers are written to a txt file for later review. Enjoy 😊!!!
 
 ### **Run: python3 main.py to start the application**
 
